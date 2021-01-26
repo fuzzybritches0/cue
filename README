@@ -1,0 +1,10 @@
+client and worker planer written in PHP
+
+this was a project I started in 2010 for fun and in the hope that it would be useful. it never came to be used in production and hence has never been finished.
+
+I invested a lot of time in this project and learned a lot. Especially how one should NOT DO things nowadays.
+
+I then moved on to node and js.
+
+implemented: simple db routines, user management, calendar planer, messaging, security measures of different kinds, ...
+

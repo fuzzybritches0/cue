@@ -1,0 +1,24 @@
+#!/bin/bash
+if [ "${1}" ]; then
+	execute=$( basename ${1} )
+	execution_script=$( basename ${0} )
+else
+	exit 1
+fi
+
+[ "${execution_script}" = "${1}" ] && exit 1
+
+execution_script_len=${#execution_script}
+execution_path_len=${#0}
+(( path = execution_path_len - execution_script_len ))
+execution_path=${0:0:${path}}
+options=${@}
+options_len=${#options}
+options=${options:${#execute}:${#options}}
+if [ -x "${execution_path}/${execute}" ]; then
+	nohup ${execution_path}/${execute} ${options} > /dev/null 2>&1 &
+	disown
+	exit 0
+else
+	exit 1
+fi

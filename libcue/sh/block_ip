@@ -1,0 +1,5 @@
+#!/bin/bash
+urequest block_ip ${1}
+sleep 16m
+urequest unblock_ip ${1}
+exit 0

@@ -1,0 +1,168 @@
+html, body {
+	min-height: 100%;
+}
+body {
+	background-color: #EFEFFF;
+	position:relative;
+}
+#menu {
+	visibility: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 80%;
+	height: auto;
+	z-index: 10;
+	border-right: 0.6em solid #000000;
+	border-bottom: 0.6em solid #000000;
+//	border: 0.6em solid #888888;
+//	border-radius: 1.4em;
+	background-color: #3388FF;
+	text-align: center;
+//	padding-top: 0.2em;
+//	padding-bottom: 0.2em;
+}
+
+#content {
+	padding-top: 3.5em;
+}
+
+#menu-mobile {
+//	border: 0.1em solid #888888;
+//	border-radius: 0.2em;
+		position: fixed;
+		width: 100%;
+	background-color: #3388FF;
+	text-align: center;
+//	padding-top: 0.2em;
+//	padding-bottom: 0.2em;
+	color: #333333;
+	font-size: 6em;
+	font-family: Arial;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+#menu-item {
+	color: #333333;
+	margin-right: 0.5em;
+	font-size: 6em;
+	font-family: Arial;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+#menu-item-selected {
+	color: #EFEFFF;
+	margin-right: 0.5em;
+	font-size: 6em;
+	font-family: Arial;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+#menu-item:hover {
+	color: #EFEFFF;
+}
+
+#content {
+	width: 100%;
+	//float: left;
+	overflow: auto;
+	font-family: Arial;
+	font-size: 2em;
+}
+#sidebar {
+	overflow: hidden;
+	visibility: hidden;
+	position: absolute;
+	top: 0;
+	right: 0;
+	float: right;
+	width: 80%;
+	height: auto;
+	z-index: 10;
+	background-color: #DDEEFF;
+	border-left: 0.2em solid #000000;
+	border-bottom: 0.2em solid #000000;
+//	border-radius: 0.5em;
+	margin: 0.0em -0.3em 0.0em 0.0em;
+//	padding: 0.3em 0.3em 0.3em 0.3em;
+	font-family: Arial;
+	font-size: 3em;
+}
+#footer {
+	width: 100%;
+	clear: both;
+	text-align: center;
+	font-family: Arial;
+	font-size: 1em;
+	text-transform: uppercase;
+	color: #777777;
+	padding: 0.8em 0.3em 0.3em 0.3em;
+}
+
+#footer p {
+	font-size: 1.5em;
+}
+table {
+	border-spacing: 0em;
+	border-color: #3388FF;
+	border-style: solid;
+	border-width: 0.1em;
+	border-radius: 0.2em;
+//	font-size: 1em;
+}
+th, td {
+	empty-cells: show;
+	border-spacing: 0em;
+	border-color: #3388FF;
+	border-style: solid;
+	border-width: 0.1em;
+	font-size: 2.5em;
+}
+#noborder {
+	border-spacing: 0em;
+	border-color: #3388FF;
+	border-style: none;
+	border-width: 0.1em;
+	font-size: 1em;
+}
+
+textarea {
+	font-size: 1.6em;
+}
+
+#noborder input {
+	font-size: 2em;
+}
+input {
+	font-size: 1em;
+}
+select {
+	font-size: 1.4em;
+}
+form {
+	font-size: 1em;
+}
+a {
+	text-decoration: none;
+	color: #3388FF;
+}
+div a:hover {
+	text-decoration: none;
+	color: #000000;
+}
+a:hover {
+	text-decoration: none;
+	color: #000000;
+}
+a:visited {
+	text-decoration: none;
+	color: #3388FF;
+}
+#selected:hover {
+	text-decoration: none;
+	color: #000000;
+}
+#selected {
+	text-decoration: none;
+	color: #666688;
+}
